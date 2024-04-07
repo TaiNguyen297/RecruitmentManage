@@ -34,7 +34,11 @@
     },
     {
       "name": "Tài chính",
-      "path": "/list-news?team=quy-ktcb"
+      "path": "/list-news?team=quy-ktcb",
+      "subMenus": [
+        { "name": "Báo cáo thu chi", "path": "/list-news?team=quy-ktcb" },
+        { "name": "Sao kê tổng hợp theo tháng", "path": "/sao-ke-tai-khoan-ngan-hang"}
+      ]
     },
     {
       "name": "Bài viết",
