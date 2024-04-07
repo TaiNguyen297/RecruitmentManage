@@ -20,7 +20,6 @@ type CoverImageBrandType = {
 
 const textConvertTeam = {
   "cung-be-trai-nghiem": "dự án cùng bé trải nghiệm",
-  "yeu-cung-be": "dự án yêu cùng bé",
   "kien-truc-su-tinh-nguyen": "team kiến trúc sư tình nguyện",
   "truyen-thong": "team truyền thông",
   "noi-dung": "team nội dung",
