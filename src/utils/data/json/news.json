@@ -1,5 +1,38 @@
 [
   {
+    "time": "2024/01/31",
+    "title": "Sao kê tài khoản ngân hàng",
+    "slug": "sao-ke-tai-khoan-ngan-hang",
+    "banner_url": "",
+    "description": "",
+    "author": "",
+    "tags": [],
+    "team": "quy-ktcb",
+    "is_highlight": false
+  },
+  {
+    "time": "2022/01/21",
+    "title": "Giai đoạn giải ngân chương trình Nhân Ái",
+    "slug": "giai-doan-giai-ngan-chuong-trinh-nhan-ai",
+    "banner_url": "http://ktcb.top/wp-content/uploads/2024/03/4-3.png",
+    "description": "Chương trình Nhân Ái giai đoạn 1 diễn ra tại trường Xanh Tuệ Đức mang đến cho các em lớp 6A1 các kiến thức về tổ chức một hoạt động, một chương trình như thế nào, tập cho các em biết cách lên ý tưởng, lập kế hoạch và thực hành thử việc triển khai hoạt động gây quỹ và tổ chức thành công được buổi đấu giá. Tiếp nối thành công, chương trình Nhân Ái không chỉ mang lại nguồn dinh dưỡng quan trọng cho sự phát triển của trẻ, mà còn là biểu tượng của sự yêu thương và tâm huyết từ những tấm lòng nhân ái trong xã hội.",
+    "author": "Lê Nguyễn Ngọc Hân",
+    "tags": [],
+    "team": "noi-dung",
+    "is_highlight": false
+  },
+  {
+    "time": "2022/01/18",
+    "title": "Chương trình Nhân Ái - Giáng sinh an lành",
+    "slug": "chuong-trinh-nhan-ai-giang-sinh-an-lanh",
+    "banner_url": "http://ktcb.top/wp-content/uploads/2024/03/5-1.png",
+    "description": "Tựa như những bông hoa cần đủ nắng sẽ nở, đủ dưỡng chất hoa sẽ ngát hương, các em nhỏ có hoàn cảnh khó khăn cũng như thế, các em cần một khoảng không đủ rộng để thỏa sức vui đùa, cần những thực phẩm bổ sung dinh dưỡng để lớn lên khỏe mạnh hơn. Các em không chỉ thiệt thòi về mặt tinh thần mà còn không được hưởng sự chăm sóc và sẻ chia ân cần như những bạn nhỏ khác. Hiểu được những hoàn cảnh như vậy, Khoảng Trời Của Bé (KTCB) đã kết hợp với các bạn học sinh lớp 6A1, 6A2 trường THCS Xanh Tuệ Đức tổ chức Chương trình Nhân Ái nhằm giúp đỡ và chia sẻ cùng các bạn nhỏ có hoàn cảnh khó khăn.",
+    "author": "Đào Khánh Linh",
+    "tags": [],
+    "team": "noi-dung",
+    "is_highlight": false
+  },
+  {
     "time": "2022/05/06",
     "title": "Bệnh tim ở trẻ em",
     "slug": "benh-tim-o-tre-em",
@@ -194,7 +227,7 @@
     "description": "Sau thành công của buổi chiếu phim thứ nhất cho các bạn nhỏ tại trung tâm Bảo Trợ Xã Hội số 3, tổ chức tình nguyện Khoảng Trời Của Bé quyết định tổ chức buổi chiếu phim thứ hai tại đây. Lần này, team Yêu Cùng Bé đã lựa chọn bộ phim “Zootopia - Phi Vụ Động Trời” với mong muốn đem lại cho các bé những trải nghiệm vui vẻ. Zootopia là thể loại phim hoạt hình, tuy nhiên xuyêt suốt bộ phim là những triết lý được các đạo diễn lồng ghép qua từng khoảnh khắc. Bộ phim là hành trình trưởng thành của cô thỏ Judy với những khó khăn không thể lường trước.",
     "author": "Lê Nguyên Khánh",
     "tags": [],
-    "team": "yeu-cung-be",
+    "team": "cung-be-trai-nghiem",
     "is_highlight": false
   },
   {
@@ -239,17 +272,6 @@
     "author": "Lê Thị Vân",
     "tags": [],
     "team": "cung-be-trai-nghiem",
-    "is_highlight": false
-  },
-  {
-    "time": "2023/11/11",
-    "title": "Yêu Cùng Bé: Kết nối sứ mệnh giáo dục",
-    "slug": "yeu-cung-be-ket-noi-su-menh-giao-duc",
-    "banner_url": "http://ktcb.top/wp-content/uploads/2023/11/IMG_9444.jpg",
-    "description": "Team Yêu Cùng Bé của Khoảng Trời Của Bé là một dự án tình nguyện, là cơ hội để mỗi bạn trẻ trở thành nguồn động viên, người hướng dẫn và người kết nối cho những giấc mơ bé nhỏ. Hãy cùng nhau mở cánh cửa hạnh phúc, sáng tạo và tương tác, để chúng ta chứng minh rằng mỗi cá nhân, từng ngày, có thể làm thay đổi thế giới xung quanh mình. Chào mừng bạn đến với gia đình của team Yêu Cùng Bé!",
-    "author": "Lê Thị Vân",
-    "tags": [],
-    "team": "yeu-cung-be",
     "is_highlight": false
   }
 ]

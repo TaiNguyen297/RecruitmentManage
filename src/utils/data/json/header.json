@@ -12,7 +12,6 @@
           "path": "/khoang-troi-cua-be#so-do-bo-may-to-chuc",
           "subMenu2": [
             { "name": "Team Cùng Bé Trải Nghiệm", "path": "/teams/cung-be-trai-nghiem" },
-            { "name": "Team Yêu Cùng Bé", "path": "/teams/yeu-cung-be" },
             { "name": "Team Nội Dung", "path": "/teams/noi-dung" },
             { "name": "Team Truyền Thông", "path": "/teams/truyen-thong" },
             { "name": "Team Kiến Trúc Sư Tình Nguyện", "path": "/teams/kien-truc-su-tinh-nguyen" },
@@ -30,13 +29,16 @@
       "path": "/list-news",
       "subMenus": [
         { "name": "Dự án Cùng Bé Trải Nghiệm", "path": "/teams/cung-be-trai-nghiem" },
-        { "name": "Dự án Yêu Cùng Bé", "path": "/teams/yeu-cung-be"},
         { "name": "Các chương trình khác", "path": "/list-news?team=noi-dung" }
       ]
     },
     {
       "name": "Tài chính",
-      "path": "/list-news?team=quy-ktcb"
+      "path": "/list-news?team=quy-ktcb",
+      "subMenus": [
+        { "name": "Báo cáo thu chi", "path": "/list-news?team=quy-ktcb" },
+        { "name": "Sao kê tổng hợp theo tháng", "path": "/sao-ke-tai-khoan-ngan-hang"}
+      ]
     },
     {
       "name": "Bài viết",
