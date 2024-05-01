@@ -20,19 +20,18 @@ type CoverImageBrandType = {
 
 const textConvertTeam = {
   "cung-be-trai-nghiem": "dự án cùng bé trải nghiệm",
-  "kien-truc-su-tinh-nguyen": "team kiến trúc sư tình nguyện",
+  "kien-truc-su-tinh-nguyen": "dự án kiến trúc sư tình nguyện",
   "truyen-thong": "team truyền thông",
   "noi-dung": "team nội dung",
-  "quy-ktcb": "quỹ ktcb",
-  "chuong-trinh-khac": "của các chương trình khác",
+  "quy-ktcb": "quỹ ktcb"
 };
 
 export const CoverImageBrand: React.FC<CoverImageBrandType> = ({ team }) => {
-  const imageUrl = brandImages[team as keyof typeof brandImages];
+  const imageUrl = brandImages[team as keyof typeof brandImages] || brandImages['default' as keyof typeof brandImages];
 
   return (
     <Box
-      className="relative w-full h-[90vh]"
+      className="relative w-full h-[50vh]"
       position="relative"
     >
       <Box
@@ -51,7 +50,7 @@ export const CoverImageBrand: React.FC<CoverImageBrandType> = ({ team }) => {
         sx={{ ...overlayStyle, opacity: 0.7}}
       >
         <Typography sx={{ color: "#e4e6eb", fontSize: "50px", fontWeight: "700" }}>
-          CÁC BÀI VIẾT VỀ {" "}
+          DANH SÁCH CÁC BÀI VIẾT{" "}
           {!!team &&
             textConvertTeam[
               team as keyof typeof textConvertTeam
