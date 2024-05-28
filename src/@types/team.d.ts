@@ -5,7 +5,6 @@ interface Team {
 
 export type TeamName =
   | "cung-be-trai-nghiem"
-  | "yeu-cung-be"
   | "kien-truc-su-tinh-nguyen"
   | "truyen-thong"
   | "noi-dung"

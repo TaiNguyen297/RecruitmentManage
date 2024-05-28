@@ -22,7 +22,7 @@ function Error404() {
           <Grid container spacing={2}>
             <Grid item xs={6}>
               <Typography variant="h1">404</Typography>
-              <Typography variant="h6">Trang tìm kiếm không tồn tại</Typography>
+              <Typography variant="h6">Trang bạn đang truy cập không tồn tại</Typography>
               <Link href={"/"}>
                 <button className="btn-filled-pink mt-2">
                   Quay lại trang chủ
