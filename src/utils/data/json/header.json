@@ -49,8 +49,8 @@
       "name": "Tham Gia",
       "path": "/",
       "subMenus": [
-        { "name": "Thành viên", "path": "/"},
-        { "name": "Nhà hảo tâm", "path": "/"}
+        { "name": "Thành viên", "path": "/member-registration"},
+        { "name": "Nhà hảo tâm", "path": "/donor-registration"}
       ]
     }
   ]
