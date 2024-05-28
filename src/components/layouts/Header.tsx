@@ -76,7 +76,7 @@ const Header = () => {
             <AccountMenu userName="Nguyễn Hữu Minh" />
           ) : (
             <Link
-              href="/login"
+              href="/"
               className="text-sm font-semibold hover:opacity-80 cursor-pointer"
             >
               Đăng nhập
