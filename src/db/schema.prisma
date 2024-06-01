@@ -17,8 +17,8 @@ model User {
 }
 
 model MemberRegistration {
-  id                  Int     @id @default(autoincrement())
-  status              MemberRegistrationStatus  @default(REVIEWING)
+  id                  Int                      @id @default(autoincrement())
+  status              MemberRegistrationStatus @default(REVIEWING)
   fullName            String
   birthday            DateTime
   phoneNumber         String
@@ -27,21 +27,22 @@ model MemberRegistration {
   workPlace           String
   hasSocialActivities Boolean
   memories            String
-  position            Position @relation(fields: [positionId], references: [id])
+  position            Position                 @relation(fields: [positionId], references: [id])
   positionId          Int
   hopeToReceive       String
-  createdAt           DateTime @default(now())
-  updatedAt           DateTime @updatedAt
+  createdAt           DateTime                 @default(now())
+  updatedAt           DateTime                 @updatedAt
 }
 
 model Position {
-  id                 Int      @id @default(autoincrement())
+  id                 Int                  @id @default(autoincrement())
   name               String
   memberRegistration MemberRegistration[]
 }
 
 enum MemberRegistrationStatus {
   REVIEWING
+  INTERVIEW
   PASSED
   FAILED
 }

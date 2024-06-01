@@ -16,6 +16,8 @@ import ClearIcon from "@mui/icons-material/Clear";
 import ToastSuccess from "@/components/shared/toasts/ToastSuccess";
 import { SubmissionDetail } from "./SubmissionDetail";
 import { EllipsisCell } from "@/components/shared/table";
+import { useRecruitment } from "../hooks/useRecuitment";
+import { MemberRegistrationStatus } from "@prisma/client";
 
 export type ActionTypeAdd = ActionType | "accept_interview";
 
@@ -34,6 +36,7 @@ const TEXT_CONFIRM = {
 
 const SubmissionTable = (props: { data: MemberRegistrationWithPosition[] }) => {
   const { data } = props;
+  const recruitment = useRecruitment();
 
   const columns = useMemo<MRT_ColumnDef<MemberRegistrationWithPosition>[]>(
     () => [
@@ -56,7 +59,7 @@ const SubmissionTable = (props: { data: MemberRegistrationWithPosition[] }) => {
         header: "Ngày sinh",
         size: 200,
         Cell: (props) => <EllipsisCell {...props} />,
-      }
+      },
     ],
     []
   );
@@ -66,7 +69,8 @@ const SubmissionTable = (props: { data: MemberRegistrationWithPosition[] }) => {
   const [openedDetail, { open: openDetail, close: closeDetail }] =
     useDisclosure();
 
-  const [rowSelected, setRowSelected] = useState<MemberRegistrationWithPosition>();
+  const [rowSelected, setRowSelected] =
+    useState<MemberRegistrationWithPosition>();
   const [action, setAction] = useState<ActionTypeAdd>();
 
   const handleOpenModal = (
@@ -80,6 +84,15 @@ const SubmissionTable = (props: { data: MemberRegistrationWithPosition[] }) => {
   };
 
   const handleConfirm = () => {
+    if (action) {
+      recruitment.mutateAsync({
+        id: rowSelected!.id,
+        status: renderStatusByAction(action),
+        email: rowSelected!.email,
+        type: action === "accept_interview" ? "INTERVIEW" : "FORM",
+      });
+    }
+
     setOpenToast(true);
     closeDetail();
     close();
@@ -87,7 +100,7 @@ const SubmissionTable = (props: { data: MemberRegistrationWithPosition[] }) => {
 
   const table = useTable({
     columns,
-    data,
+    data: data || [],
     renderTopToolbar: () => <div />,
     renderBottomToolbar: () => <div />,
     enableRowActions: true,
@@ -163,3 +176,16 @@ const SubmissionTable = (props: { data: MemberRegistrationWithPosition[] }) => {
 };
 
 export { SubmissionTable };
+
+export const renderStatusByAction = (action: ActionTypeAdd) => {
+  switch (action) {
+    case "accept":
+      return MemberRegistrationStatus.PASSED;
+    case "reject":
+      return MemberRegistrationStatus.FAILED;
+    case "accept_interview":
+      return MemberRegistrationStatus.INTERVIEW;
+    default:
+      return MemberRegistrationStatus.REVIEWING;
+  }
+};

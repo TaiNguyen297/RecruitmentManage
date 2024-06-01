@@ -1,21 +1,28 @@
-import * as nodemailer from 'nodemailer';
+import * as nodemailer from "nodemailer";
+import { Address } from "nodemailer/lib/mailer";
 
-export async function sendMail(to: [string], subject: string, html: any) {
-  var transporter = nodemailer.createTransport({
-    host: "smtp-relay.brevo.com",
-    port: 587,
-    secure: false,
-    auth: {
-      user: process.env.NODEMAILER_EMAIL,
-      pass: process.env.NODEMAILER_PW,
-    }
-  });
+const transporter = nodemailer.createTransport({
+  host: "smtp-relay.brevo.com",
+  port: 587,
+  secure: false,
+  auth: {
+    user: process.env.NODEMAILER_EMAIL,
+    pass: process.env.NODEMAILER_PW,
+  },
+});
 
-  var mailOptions = {
+export async function sendMail(
+  to: [string],
+  subject: string,
+  html: any,
+  bcc?: string | Address | Array<string | Address>
+) {
+  const mailOptions = {
     from: process.env.NODEMAILER_EMAIL,
     to,
     subject,
-    html
+    html,
+    bcc,
   };
 
   return transporter.sendMail(mailOptions, (err: Error | null, info) => {
