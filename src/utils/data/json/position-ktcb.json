@@ -1,0 +1,18 @@
+[
+  {
+    "value": 1,
+    "label": "Tình nguyện viên"
+  },
+  {
+    "value": 2,
+    "label": "Thành viên ban tổ chức"
+  },
+  {
+    "value": 3,
+    "label": "Thư ký"
+  },
+  {
+    "value": 4,
+    "label": "Chủ tịch"
+  }
+]
